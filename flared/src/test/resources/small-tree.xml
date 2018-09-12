@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forest sent_id="NKJP_1M_0302000000007/morph_14-p/morph_14.63-s" grammar_no="1365766349">
+    <text>Pewną ręką zamyka książkę.</text>
+    <startnode from="0" to="5">wypowiedzenie</startnode>
+    <stats trees="10" nodes="38" inferences="15462" cputime="0.01"/>
+    <answer-data>
+        <base-answer type="FULL" username="none">
+            <comment>AUTO</comment>
+        </base-answer>
+        <extra-answer type="FULL" username="krystynab">
+            <comment></comment>
+        </extra-answer>
+        <extra-answer type="FULL" username="witoldk">
+            <comment></comment>
+        </extra-answer>
+    </answer-data>
+    <node nid="0" from="0" to="5" subtrees="10" chosen="true">
+        <nonterminal>
+            <category>wypowiedzenie</category>
+        </nonterminal>
+        <children rule="w" chosen="true">
+            <child nid="1" from="0" to="4" head="true"/>
+            <child nid="36" from="4" to="5" head="false"/>
+        </children>
+    </node>
+    <node nid="1" from="0" to="4" subtrees="10" chosen="true">
+        <nonterminal>
+            <category>zdanie</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="ze3">
+            <child nid="2" from="0" to="2" head="false"/>
+            <child nid="10" from="2" to="3" head="true"/>
+            <child nid="14" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze3">
+            <child nid="18" from="0" to="2" head="false"/>
+            <child nid="19" from="2" to="3" head="true"/>
+            <child nid="22" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze2">
+            <child nid="23" from="0" to="2" head="false"/>
+            <child nid="24" from="2" to="3" head="true"/>
+            <child nid="14" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze2" chosen="true">
+            <child nid="23" from="0" to="2" head="false"/>
+            <child nid="27" from="2" to="3" head="true"/>
+            <child nid="22" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze2">
+            <child nid="30" from="0" to="1" head="false"/>
+            <child nid="33" from="1" to="2" head="false"/>
+            <child nid="24" from="2" to="3" head="true"/>
+            <child nid="14" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze2">
+            <child nid="30" from="0" to="1" head="false"/>
+            <child nid="33" from="1" to="2" head="false"/>
+            <child nid="27" from="2" to="3" head="true"/>
+            <child nid="22" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze3">
+            <child nid="34" from="0" to="1" head="false"/>
+            <child nid="33" from="1" to="2" head="false"/>
+            <child nid="10" from="2" to="3" head="true"/>
+            <child nid="14" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze3">
+            <child nid="34" from="0" to="1" head="false"/>
+            <child nid="33" from="1" to="2" head="false"/>
+            <child nid="19" from="2" to="3" head="true"/>
+            <child nid="22" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze3">
+            <child nid="34" from="0" to="1" head="false"/>
+            <child nid="35" from="1" to="2" head="false"/>
+            <child nid="24" from="2" to="3" head="true"/>
+            <child nid="14" from="3" to="4" head="false"/>
+        </children>
+        <children rule="ze3">
+            <child nid="34" from="0" to="1" head="false"/>
+            <child nid="35" from="1" to="2" head="false"/>
+            <child nid="27" from="2" to="3" head="true"/>
+            <child nid="22" from="3" to="4" head="false"/>
+        </children>
+    </node>
+    <node nid="2" from="0" to="2" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fl</category>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="lu2">
+            <child nid="3" from="0" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="3" from="0" to="2" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fno</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">rzecz</f>
+            <f type="zap">bzap</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="noa2" chosen="true">
+            <child nid="4" from="0" to="1" head="false"/>
+            <child nid="7" from="1" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="4" from="0" to="1" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fpt</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="stopień">row</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">przym</f>
+            <f type="zap">bzap</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="pt1" chosen="true">
+            <child nid="5" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="5" from="0" to="1" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>formaprzym</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="stopień">row</f>
+            <f type="rekcja">[]</f>
+        </nonterminal>
+        <children rule="n_pt1" chosen="true">
+            <child nid="6" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="6" from="0" to="1" subtrees="1" chosen="true">
+        <terminal token_id="morph_14.59-seg"
+            interp_id="morph_14.59.2.2-msd" disamb="true" nps="false">
+            <orth>Pewną</orth>
+            <base>pewny</base>
+            <f type="tag">adj:sg:inst:f:pos</f>
+        </terminal>
+    </node>
+    <node nid="7" from="1" to="2" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fno</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">rzecz</f>
+            <f type="zap">bzap</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="no1" chosen="true">
+            <child nid="8" from="1" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="8" from="1" to="2" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>formarzecz</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="rekcja">[]</f>
+        </nonterminal>
+        <children rule="n_rz1" chosen="true">
+            <child nid="9" from="1" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="9" from="1" to="2" subtrees="1" chosen="true">
+        <terminal token_id="morph_14.60-seg"
+            interp_id="morph_14.60.1.1-msd" disamb="true" nps="false">
+            <orth>ręką</orth>
+            <base>ręka</base>
+            <f type="tag">subst:sg:inst:f</f>
+        </terminal>
+    </node>
+    <node nid="10" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>ff</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="fi1">
+            <child nid="11" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="11" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fwe</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="we1">
+            <child nid="12" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="12" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>formaczas</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+        </nonterminal>
+        <children rule="n_cz4">
+            <child nid="13" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="13" from="2" to="3" subtrees="1" chosen="true">
+        <terminal token_id="morph_14.61-seg"
+            interp_id="morph_14.61.1.1-msd" disamb="true" nps="false">
+            <orth>zamyka</orth>
+            <base>zamykać</base>
+            <f type="tag">fin:sg:ter:imperf</f>
+        </terminal>
+    </node>
+    <node nid="14" from="3" to="4" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fl</category>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="lu2">
+            <child nid="15" from="3" to="4" head="true"/>
+        </children>
+    </node>
+    <node nid="15" from="3" to="4" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fno</category>
+            <f type="przypadek">bier</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">rzecz</f>
+            <f type="zap">bzap</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="no1" chosen="true">
+            <child nid="16" from="3" to="4" head="true"/>
+        </children>
+    </node>
+    <node nid="16" from="3" to="4" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>formarzecz</category>
+            <f type="przypadek">bier</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="rekcja">[]</f>
+        </nonterminal>
+        <children rule="n_rz1" chosen="true">
+            <child nid="17" from="3" to="4" head="true"/>
+        </children>
+    </node>
+    <node nid="17" from="3" to="4" subtrees="1" chosen="true">
+        <terminal token_id="morph_14.62-seg"
+            interp_id="morph_14.62.1.1-msd" disamb="true" nps="false">
+            <orth>książkę</orth>
+            <base>książka</base>
+            <f type="tag">subst:sg:acc:f</f>
+        </terminal>
+    </node>
+    <node nid="18" from="0" to="2" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fl</category>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="lu2">
+            <child nid="3" from="0" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="19" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>ff</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(bier)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="fi1">
+            <child nid="20" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="20" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fwe</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(bier)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="we1">
+            <child nid="21" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="21" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>formaczas</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(bier)]</f>
+        </nonterminal>
+        <children rule="n_cz4">
+            <child nid="13" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="22" from="3" to="4" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fw</category>
+            <f type="tfw">np(bier)</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="poz">post</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="wy5" chosen="true">
+            <child nid="15" from="3" to="4" head="true"/>
+        </children>
+    </node>
+    <node nid="23" from="0" to="2" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fw</category>
+            <f type="tfw">np(narz)</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="wy6" chosen="true">
+            <child nid="3" from="0" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="24" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>ff</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="fi1">
+            <child nid="25" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="25" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fwe</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="we1">
+            <child nid="26" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="26" from="2" to="3" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>formaczas</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz)]</f>
+        </nonterminal>
+        <children rule="n_cz4">
+            <child nid="13" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="27" from="2" to="3" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>ff</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz),np(bier)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="fi1" chosen="true">
+            <child nid="28" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="28" from="2" to="3" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>fwe</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz),np(bier)]</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="we1" chosen="true">
+            <child nid="29" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="29" from="2" to="3" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>formaczas</category>
+            <f type="wyróżnik">os</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="tryb">ozn</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[np(narz),np(bier)]</f>
+        </nonterminal>
+        <children rule="n_cz4" chosen="true">
+            <child nid="13" from="2" to="3" head="true"/>
+        </children>
+    </node>
+    <node nid="30" from="0" to="1" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fw</category>
+            <f type="tfw">np(narz)</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="wy6">
+            <child nid="31" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="31" from="0" to="1" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fno</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">przym</f>
+            <f type="zap">bzap</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="no9">
+            <child nid="32" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="32" from="0" to="1" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fpt</category>
+            <f type="przypadek">narz</f>
+            <f type="rodzaj">żeń</f>
+            <f type="liczba">poj</f>
+            <f type="stopień">row</f>
+            <f type="rekcja">[]</f>
+            <f type="klasa">przym</f>
+            <f type="zap">bzap</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="pt1">
+            <child nid="5" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="33" from="1" to="2" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fl</category>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="lu2">
+            <child nid="7" from="1" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="34" from="0" to="1" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fl</category>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="lu15">
+            <child nid="32" from="0" to="1" head="true"/>
+        </children>
+    </node>
+    <node nid="35" from="1" to="2" subtrees="1" chosen="false">
+        <nonterminal>
+            <category>fw</category>
+            <f type="tfw">np(narz)</f>
+            <f type="aspekt">nd</f>
+            <f type="czas">ter</f>
+            <f type="rodzaj">_</f>
+            <f type="liczba">poj</f>
+            <f type="osoba">3</f>
+            <f type="poz">pre</f>
+            <f type="neg">tak</f>
+            <f type="dest">neut</f>
+            <f type="ink">ni</f>
+        </nonterminal>
+        <children rule="wy6">
+            <child nid="7" from="1" to="2" head="true"/>
+        </children>
+    </node>
+    <node nid="36" from="4" to="5" subtrees="1" chosen="true">
+        <nonterminal>
+            <category>znakkonca</category>
+            <f type="dest">neut</f>
+        </nonterminal>
+        <children rule="int2" chosen="true">
+            <child nid="37" from="4" to="5" head="true"/>
+        </children>
+    </node>
+    <node nid="37" from="4" to="5" subtrees="1" chosen="true">
+        <terminal token_id="morph_14.63-seg"
+            interp_id="morph_14.63.1.1-msd" disamb="true" nps="true">
+            <orth>.</orth>
+            <base>.</base>
+            <f type="tag">interp</f>
+        </terminal>
+    </node>
+</forest>

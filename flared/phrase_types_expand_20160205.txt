@@ -1,0 +1,777 @@
+% Phrase types extensions:
+advp(abl)-->
+    skąd	[pewna]
+    skądkolwiek	[pewna]
+    skądś	[pewna]
+    skądże	[pewna]
+    stamtąd	[pewna]
+    stąd	[pewna]
+    zewsząd	[pewna]
+    znikąd	[pewna]
+    skądinąd	[archaiczna]
+    skądciś	[potoczna]
+    skądsiś	[potoczna]
+advp(adl)-->
+    blisko	[pewna]
+    daleko	[pewna]
+    dokąd	[pewna]
+    dokądkolwiek	[pewna]
+    donikąd	[pewna]
+    gdzie	[pewna]
+    gdziekolwiek	[pewna]
+    gdzieś	[pewna]
+    gdzież	[pewna]
+    niedaleko	[pewna]
+    tam	[pewna]
+    tamże	[pewna]
+    tu	[pewna]
+    tutaj	[pewna]
+    wstecz	[pewna]
+advp(dur)-->
+    długo	[pewna]
+    ile	[pewna]
+    ilekolwiek	[pewna]
+    jeszcze	[pewna]
+    już	[pewna]
+    krótko	[pewna]
+    nadal	[pewna]
+    trochę	[pewna]
+    tyle	[pewna]
+    wciąż	[pewna]
+    ciągle	[wątpliwa]
+advp(locat)-->
+    blisko	[pewna]
+    daleko	[pewna]
+    dokoła	[pewna]
+    dookoła	[pewna]
+    gdzie	[pewna]
+    gdziekolwiek	[pewna]
+    gdzieniegdzie	[pewna]
+    gdzieś	[pewna]
+    gdzież	[pewna]
+    naokoło	[pewna]
+    niedaleko	[pewna]
+    nieopodal	[pewna]
+    nigdzie	[pewna]
+    nisko	[pewna]
+    obok	[pewna]
+    opodal	[pewna]
+    ówdzie	[pewna]
+    poniżej	[pewna]
+    powyżej	[pewna]
+    tam	[pewna]
+    tamże	[pewna]
+    tu	[pewna]
+    tutaj	[pewna]
+    wewnątrz	[pewna]
+    wkoło	[pewna]
+    wokoło	[pewna]
+    wokół	[pewna]
+    wszędzie	[pewna]
+    wysoko	[pewna]
+    naokół	[archaiczna]
+    wszędy	[archaiczna]
+advp(perl)-->
+    którędy	[pewna]
+    którędykolwiek	[pewna]
+    którędyś	[pewna]
+    którędyż	[pewna]
+    tamtędy	[pewna]
+    tędy	[pewna]
+    owędy	[wątpliwa]
+    kędy	[archaiczna]
+    kędykolwiek	[archaiczna]
+advp(temp)-->
+    często	[pewna]
+    częstokroć	[pewna]
+    dawno	[pewna]
+    dotąd	[pewna]
+    dotychczas	[pewna]
+    dzisiaj	[pewna]
+    dziś	[pewna]
+    jutro	[pewna]
+    kiedy	[pewna]
+    kiedykolwiek	[pewna]
+    kiedyś	[pewna]
+    nieczęsto	[pewna]
+    niedawno	[pewna]
+    niedługo	[pewna]
+    niegdyś	[pewna]
+    niekiedy	[pewna]
+    nieraz	[pewna]
+    nieregularnie	[pewna]
+    nierzadko	[pewna]
+    obecnie	[pewna]
+    ówcześnie	[pewna]
+    podówczas	[pewna]
+    pojutrze	[pewna]
+    popojutrze	[pewna]
+    potem	[pewna]
+    późno	[pewna]
+    przedwczoraj	[pewna]
+    przenigdy	[pewna]
+    regularnie	[pewna]
+    rzadko	[pewna]
+    sporadycznie	[pewna]
+    teraz	[pewna]
+    wcześnie	[pewna]
+    wczoraj	[pewna]
+    wkrótce	[pewna]
+    wnet	[pewna]
+    wówczas	[pewna]
+    wtedy	[pewna]
+    wtenczas	[pewna]
+    zaraz	[pewna]
+    zawsze	[pewna]
+    drzewiej	[archaiczna]
+    latoś	[archaiczna]
+    naonczas	[archaiczna]
+    naówczas	[archaiczna]
+    natenczas	[archaiczna]
+    nikędy	[archaiczna]
+    ninie	[archaiczna]
+    onegdaj	[archaiczna]
+    ongi	[archaiczna]
+    ongiś	[archaiczna]
+    wczas	[archaiczna]
+    wonczas	[archaiczna]
+comprepnp(bez względu na)-->
+    lex(prepnp(bez,gen),sg,'wzgląd',ratr1({prepnp(na,acc);prepncp(na,acc,int);prepncp(na,acc,że)}))	[pewna]
+comprepnp(do spółki z)-->
+    lex(prepnp(do,gen),sg,'spółka',ratr1({prepnp(z,inst)}))	[pewna]
+comprepnp(do spraw)-->
+    lex(prepnp(do,gen),pl,'sprawa',ratr1({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(łącznie z)-->
+    lex(advp(misc),pos,'łącznie',ratr1({prepnp(z,inst);prepncp(z,inst,int);prepncp(z,inst,że);prepncp(z,inst,żeby)}))	[pewna]
+comprepnp(na bazie)-->
+    lex(prepnp(na,loc),sg,'baza',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{lex(adjp(agr),agr,agr,pos,XOR('inny','taki','ten'),natr)}))	[pewna]
+comprepnp(na czas)-->
+    lex(prepnp(na,acc),sg,'czas',ratr1({lex(adjp(agr),agr,agr,pos,'ten',natr)}))	[pewna]
+    lex(prepnp(na,acc),sg,'czas',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('cały','sam'),natr)}))	[pewna]
+comprepnp(na czele z)-->
+    {prepnp(z,inst)} + {fixed(prepnp(na,loc),'na czele')}	[pewna]
+comprepnp(na drodze)-->
+    lex(prepnp(na,loc),sg,'droga',ratr1({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('inny','ten'),atr({adjp(agr)}))}))	[pewna]
+comprepnp(na gruncie)-->
+    lex(prepnp(na,loc),sg,'grunt',ratr({np(gen);ncp(gen,że)}))	[pewna]
+comprepnp(na kanwie)-->
+    lex(prepnp(na,loc),sg,'kanwa',ratr({np(gen);ncp(gen,int[co])}+{adjp(agr)}))	[pewna]
+comprepnp(na koniec)-->
+    lex(prepnp(na,acc),sg,'koniec',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na końcu)-->
+    lex(prepnp(na,loc),sg,'koniec',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(na korzyść)-->
+    lex(prepnp(na,acc),sg,OR('korzyść','niekorzyść'),ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{possp}))	[pewna]
+comprepnp(na kształt)-->
+    lex(prepnp(na,acc),sg,'kształt',ratr1({np(gen)}))	[pewna]
+comprepnp(na łamach)-->
+    lex(prepnp(na,loc),pl,'łam',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(na miarę)-->
+    lex(prepnp(na,acc),sg,'miara',ratr1({np(gen)}))	[pewna]
+comprepnp(na modłę)-->
+    lex(prepnp(na,acc),sg,'modła',ratr({np(gen);ncp(gen,int[co;jak])}+{adjp(agr)}))	[pewna]
+comprepnp(na myśl)-->
+    lex(prepnp(na,acc),sg,'myśl',ratr({adjp(agr)}+{prepnp(na,loc);cp(int);cp(rel);cp(że);cp(żeby);prepncp(na,loc,int);prepncp(na,loc,że)}))	[pewna]
+comprepnp(na niekorzyść)-->
+    lex(prepnp(na,acc),sg,OR('korzyść','niekorzyść'),ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{possp}))	[pewna]
+comprepnp(na niwie)-->
+    lex(prepnp(na,loc),sg,'niwa',ratr1({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(na okoliczność)-->
+    lex(prepnp(na,acc),sg,'okoliczność',ratr1({np(gen);cp(int);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(na okres)-->
+    lex(prepnp(na,acc),sg,'okres',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'cały',natr)}))	[pewna]
+comprepnp(na początek)-->
+    lex(prepnp(na,acc),sg,'początek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na początku)-->
+    lex(prepnp(na,loc),sg,'początek',ratr1({np(gen)}+{ncp(gen,rel[co;który])}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki','zupełny'),natr)}))	[pewna]
+comprepnp(na poczet)-->
+    lex(prepnp(na,acc),sg,'poczet',ratr1({np(gen);ncp(gen,int[co]);ncp(gen,że)}+{lex(adjp(agr),agr,agr,pos,XOR('swój','ten'),natr)}))	[pewna]
+comprepnp(na podobieństwo)-->
+    lex(prepnp(na,acc),sg,'podobieństwo',ratr1({possp}+{ncp(gen,int)}))	[pewna]
+comprepnp(na podstawie)-->
+    lex(prepnp(na,loc),sg,'podstawa',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(na polu)-->
+    lex(prepnp(na,loc),sg,'pole',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(na poziomie)-->
+    lex(prepnp(na,loc),sg,'poziom',ratr({np(gen);ncp(gen,int[co])}+{adjp(agr)}))	[pewna]
+comprepnp(na progu)-->
+    lex(prepnp(na,loc),sg,'próg',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(na przeciąg)-->
+    lex(prepnp(na,acc),sg,'przeciąg',ratr1({np(gen)}))	[pewna]
+comprepnp(na przekór)-->
+    lex(prepnp(na,acc),sg,'przekór',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}))	[pewna]
+comprepnp(na przełomie)-->
+    lex(prepnp(na,loc),sg,'przełom',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(na przodzie)-->
+    lex(prepnp(na,loc),sg,'przód',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na przód)-->
+    lex(prepnp(na,acc),sg,'przód',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na punkcie)-->
+    lex(prepnp(na,loc),sg,'punkt',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{lex(adjp(agr),agr,agr,pos,XOR('czyj','czyjkolwiek','czyjś','jakikolwiek','jakiś','mój','nasz','niczyj','pański','swój','ten','twój','wasz','własny'),atr1({adjp(agr)}+{advp(misc)}))}))	[pewna]
+comprepnp(na równi z)-->
+    lex(prepnp(na,loc),sg,'rówień',ratr1({prepnp(z,inst);prepncp(z,inst,int);prepncp(z,inst,że)}))	[pewna]
+comprepnp(na rzecz)-->
+    lex(prepnp(na,acc),sg,'rzecz',ratr1({np(gen);ncp(gen,że);ncp(gen,żeby)}+{lex(adjp(agr),agr,agr,pos,XOR('czyjś','mój','nasz','swój','twój','wasz','własny'),natr)}))	[pewna]
+comprepnp(na skalę)-->
+    lex(prepnp(na,acc),sg,'skala',ratr({np(gen);ncp(gen,że)}))	[pewna]
+comprepnp(na skutek)-->
+    lex(prepnp(na,acc),sg,'skutek',ratr1({np(gen);ncp(gen,że)}))	[pewna]
+comprepnp(na sposób)-->
+    lex(prepnp(na,acc),sg,'sposób',ratr1({possp}))	[pewna]
+    lex(prepnp(na,acc),_,'sposób',ratr1({adjp(agr)}))	[pewna]
+comprepnp(na spółkę z)-->
+    lex(prepnp(na,acc),sg,'spółka',ratr1({prepnp(z,inst)}))	[pewna]
+comprepnp(na szkodę)-->
+    lex(prepnp(na,acc),sg,'szkoda',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(na środek)-->
+    lex(prepnp(na,acc),sg,'środek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na środku)-->
+    lex(prepnp(na,loc),sg,'środek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na temat)-->
+    lex(prepnp(na,acc),_,'temat',atr({np(gen);cp(int);cp(że);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(na tle)-->
+    lex(prepnp(na,loc),sg,'tło',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(na tyle)-->
+    lex(prepnp(na,loc),sg,'tył',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na tył)-->
+    lex(prepnp(na,acc),sg,'tył',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na widok)-->
+    lex(prepnp(na,acc),sg,'widok',ratr1({np(gen);cp(int[jak]);cp(że);ncp(gen,int[co;jak]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(na wniosek)-->
+    lex(prepnp(na,acc),sg,'wniosek',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(na wstępie)-->
+    lex(prepnp(na,loc),sg,'wstęp',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na wypadek)-->
+    lex(prepnp(na,acc),sg,'wypadek',ratr1({np(gen);ncp(gen,gdy);ncp(gen,rel[co;jak;jakby]);ncp(gen,że)}+{lex(adjp(agr),agr,agr,pos,XOR('każdy','taki','ten','wszelki'),natr)}))	[pewna]
+comprepnp(na wzór)-->
+    lex(prepnp(na,acc),sg,'wzór',ratr1({possp}))	[pewna]
+comprepnp(na zakończenie)-->
+    lex(prepnp(na,acc),sg,'zakończenie',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(na zasadzie)-->
+    lex(prepnp(na,loc),sg,'zasada',ratr({np(gen);ncp(gen,int[co])}+{adjp(agr)}))	[pewna]
+comprepnp(niezależnie od)-->
+    lex(advp(misc),pos,'niezależnie',ratr1({prepnp(od,gen);prepncp(od,gen,int);prepncp(od,gen,że)}))	[pewna]
+comprepnp(niezgodnie z)-->
+    lex(advp(misc),pos,'niezgodnie',ratr1({prepnp(z,inst);prepncp(z,inst,int)}))	[pewna]
+comprepnp(od strony)-->
+    lex(prepnp(od,gen),sg,'strona',ratr({np(gen);ncp(gen,int)}+{adjp(agr)}))	[pewna]
+comprepnp(od tyłu)-->
+    lex(prepnp(od,gen),sg,'tył',ratr1({np(gen)}))	[pewna]
+comprepnp(pod adresem)-->
+    lex(prepnp(pod,inst),sg,'adres',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{lex(adjp(agr),agr,agr,pos,XOR('czyj','czyjkolwiek','czyjś','dobry','mój','nasz','niczyj','niewłaściwy','pański','swój','twój','wasz','własny','właściwy','zły'),atr1({adjp(agr)}+{advp(misc)}))}))	[pewna]
+comprepnp(pod ciężarem)-->
+    lex(prepnp(pod,inst),sg,'ciężar',ratr({np(gen);ncp(gen,int[co;jak])}+{adjp(agr)}))	[pewna]
+comprepnp(pod dowództwem)-->
+    lex(prepnp(pod,inst),sg,'dowództwo',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(pod egidą)-->
+    lex(prepnp(pod,inst),sg,'egida',ratr1({np(gen)}))	[pewna]
+comprepnp(pod kątem)-->
+    lex(prepnp(pod,inst),sg,'kąt',ratr1({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(pod kierunkiem)-->
+    lex(prepnp(pod,inst),sg,'kierunek',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(pod koniec)-->
+    lex(prepnp(pod,acc),sg,'koniec',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(pod maską)-->
+    lex(prepnp(pod,inst),sg,'maska',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(pod okiem)-->
+    lex(prepnp(pod,inst),sg,'oko',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(pod osłoną)-->
+    lex(prepnp(pod,inst),sg,'osłona',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(pod płaszczykiem)-->
+    lex(prepnp(pod,inst),sg,'płaszczyk',ratr({np(gen);cp(że);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(pod postacią)-->
+    lex(prepnp(pod,inst),sg,'postać',ratr({np(gen);ncp(gen,int[co;jak;kto])}))	[pewna]
+comprepnp(pod pozorem)-->
+    lex(prepnp(pod,inst),sg,'pozór',ratr({np(gen);cp(że);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(pod pretekstem)-->
+    lex(prepnp(pod,inst),sg,'pretekst',ratr({np(gen);cp(że);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(pod przywództwem)-->
+    lex(prepnp(pod,inst),sg,'przywództwo',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(pod rygorem)-->
+    lex(prepnp(pod,inst),sg,'rygor',ratr({np(gen);cp(że);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(pod warunkiem)-->
+    lex(prepnp(pod,inst),sg,'warunek',ratr({adjp(agr)}+{cp(że)}))	[pewna]
+    lex(prepnp(pod,inst),sg,'warunek',ratr({np(gen);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+    lex(prepnp(pod,inst),_,'warunek',ratr({adjp(agr)}+{or}))	[pewna]
+comprepnp(pod wodzą)-->
+    lex(prepnp(pod,inst),sg,'wodza',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(pod wpływem)-->
+    lex(prepnp(pod,inst),_,'wpływ',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(pod względem)-->
+    lex(prepnp(pod,inst),_,'wzgląd',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(po bokach)-->
+    lex(prepnp(po,loc),pl,'bok',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+    lex(prepnump(po,loc),XOR('cztery','dwa','oba','obydwa'),'bok',atr({np(gen)}))	[pewna]
+comprepnp(po stronie)-->
+    lex(prepnp(po,loc),_,'strona',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+    lex(prepnump(po,loc),XOR('dwa','oba','obydwa'),'strona',atr({np(gen)}))	[pewna]
+comprepnp(przy okazji)-->
+    lex(prepnp(przy,loc),sg,'okazja',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(przy pomocy)-->
+    lex(prepnp(przy,loc),sg,'pomoc',ratr({np(gen);ncp(gen,rel[co])}+{adjp(agr)}))	[pewna]
+comprepnp(przy użyciu)-->
+    lex(prepnp(przy,loc),sg,'użycie',ratr({np(gen);ncp(gen,rel[co])}+{adjp(agr)}))	[pewna]
+comprepnp(razem z)-->
+    lex(advp(misc),pos,'razem',ratr1({prepnp(z,inst)}))	[pewna]
+comprepnp(u boku)-->
+    lex(prepnp(u,gen),sg,'bok',ratr({possp}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(u dołu)-->
+    lex(prepnp(u,gen),sg,'dół',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(u góry)-->
+    lex(prepnp(u,gen),sg,'góra',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(u podnóża)-->
+    lex(prepnp(u,gen),sg,'podnóże',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(u podstaw)-->
+    lex(prepnp(u,gen),_,'podstawa',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(u progu)-->
+    lex(prepnp(u,gen),sg,'próg',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(u schyłku)-->
+    lex(prepnp(u,gen),sg,'schyłek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(u stóp)-->
+    lex(prepnp(u,gen),pl,'stopa',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(wspólnie z)-->
+    lex(advp(misc),pos,'wspólnie',ratr1({prepnp(z,inst)}))	[pewna]
+comprepnp(w celu)-->
+    lex(prepnp(w,loc),sg,'cel',ratr({np(gen);ncp(gen,int[co]);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w charakterze)-->
+    lex(prepnp(w,loc),sg,'charakter',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w ciągu)-->
+    lex(prepnp(w,loc),sg,'ciąg',ratr({np(gen)}+{lex(adjp(agr),agr,agr,com,'daleki',natr)}))	[pewna]
+comprepnp(w czasie)-->
+    lex(prepnp(w,loc),sg,'czas',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w dole)-->
+    lex(prepnp(w,loc),sg,'dół',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(w dół)-->
+    lex(prepnp(w,acc),sg,'dół',ratr1({np(gen)}))	[pewna]
+comprepnp(w drodze)-->
+    lex(prepnp(w,loc),sg,'droga',ratr1({np(gen)}))	[pewna]
+comprepnp(w duchu)-->
+    lex(prepnp(w,loc),sg,'duch',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w dziedzinie)-->
+    lex(prepnp(w,loc),sg,'dziedzina',ratr({np(gen);ncp(gen,int)}+{adjp(agr)}))	[pewna]
+comprepnp(w efekcie)-->
+    lex(prepnp(w,loc),sg,'efekt',ratr({np(gen);ncp(gen,int[co;jak]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w głąb)-->
+    lex(prepnp(w,acc),sg,'głąb',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w głębi)-->
+    lex(prepnp(w,loc),sg,'głąb',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w górę)-->
+    lex(prepnp(w,acc),sg,'góra',ratr1({np(gen)}))	[pewna]
+comprepnp(w górze)-->
+    lex(prepnp(w,acc),sg,'góra',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(w imieniu)-->
+    lex(prepnp(w,loc),sg,'imię',ratr({possp}))	[pewna]
+comprepnp(w imię)-->
+    lex(prepnp(w,acc),sg,'imię',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}))	[pewna]
+comprepnp(w intencji)-->
+    lex(prepnp(w,loc),sg,'intencja',ratr({np(gen);possp;ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w kierunku)-->
+    lex(prepnp(w,loc),pl,'kierunek',ratr({adjp(agr)}))	[pewna]
+    lex(prepnp(w,loc),sg,'kierunek',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w końcu)-->
+    lex(prepnp(w,loc),sg,'koniec',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w kwestii)-->
+    lex(prepnp(w,loc),_,'kwestia',ratr({adjp(agr)}+{cp(int);cp(że)}))	[pewna]
+    lex(prepnp(w,loc),_,'kwestia',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w miarę)-->
+    lex(prepnp(w,acc),sg,'miara',ratr1({np(gen);ncp(gen,int[jak])}))	[pewna]
+comprepnp(w miejsce)-->
+    lex(prepnp(w,acc),sg,'miejsce',ratr1({np(gen);ncp(gen,int[co])}))	[pewna]
+comprepnp(w myśl)-->
+    lex(prepnp(w,acc),sg,'myśl',ratr1({np(gen);ncp(gen,int[co;jak]);ncp(gen,że)}))	[pewna]
+comprepnp(w następstwie)-->
+    lex(prepnp(w,loc),sg,'następstwo',ratr({np(gen);ncp(gen,int[co;jak]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w nawiązaniu do)-->
+    lex(prepnp(w,loc),sg,'nawiązanie',ratr1({prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że)}))	[pewna]
+comprepnp(w obliczu)-->
+    lex(prepnp(w,loc),sg,'oblicze',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w obrębie)-->
+    lex(prepnp(w,loc),sg,'obręb',ratr({np(gen);ncp(gen,int[co;jak])}+{adjp(agr)}))	[pewna]
+comprepnp(w obszarze)-->
+    lex(prepnp(w,loc),sg,'obszar',ratr({np(gen);ncp(gen,int[co;czy;jak])}+{adjp(agr)}))	[pewna]
+comprepnp(w oderwaniu od)-->
+    lex(prepnp(w,loc),sg,'oderwanie',ratr1({prepnp(od,gen);prepncp(od,gen,int);prepncp(od,gen,że)}))	[pewna]
+comprepnp(w odniesieniu do)-->
+    lex(prepnp(w,loc),sg,'odniesienie',ratr1({prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że)}))	[pewna]
+comprepnp(w odróżnieniu od)-->
+    lex(prepnp(w,loc),sg,'odróżnienie',ratr1({prepnp(od,gen);prepncp(od,gen,int[co;jak]);prepncp(od,gen,że)}))	[pewna]
+comprepnp(w okolicach)-->
+    lex(prepnp(w,loc),_,'okolica',ratr({np(gen)}))	[pewna]
+comprepnp(w okresie)-->
+    lex(prepnp(w,loc),sg,'okres',ratr)	[pewna]
+comprepnp(w oparciu o)-->
+    lex(prepnp(w,loc),sg,'oparcie',ratr1({prepnp(o,acc);prepncp(o,acc,int);prepncp(o,acc,że)}))	[pewna]
+comprepnp(w opozycji do)-->
+    lex(prepnp(w,loc),sg,'opozycja',ratr({adjp(agr)}+{prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że)}))	[pewna]
+comprepnp(w pobliże)-->
+    lex(prepnp(w,acc),sg,'pobliże',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w pobliżu)-->
+    lex(prepnp(w,loc),sg,'pobliże',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w poprzek)-->
+    {np(gen);ncp(gen,rel)} + {fixed(advp(misc),'w poprzek')}	[pewna]
+comprepnp(w porównaniu do)-->
+    lex(prepnp(w,loc),sg,'porównanie',ratr1({prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że)}))	[wątpliwa]
+comprepnp(w porównaniu z)-->
+    lex(prepnp(w,loc),sg,'porównanie',ratr1({prepnp(z,inst);prepncp(z,inst,int);prepncp(z,inst,że)}))	[pewna]
+comprepnp(w postaci)-->
+    lex(prepnp(w,loc),sg,'postać',ratr1({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w przeciągu)-->
+    lex(prepnp(w,loc),sg,'przeciąg',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w przeciwieństwie do)-->
+    lex(prepnp(w,loc),sg,'przeciwieństwo',ratr({adjp(agr)}+{prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że)}))	[pewna]
+comprepnp(w przeddzień)-->
+    lex(prepnp(w,acc),sg,'przeddzień',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(w przededniu)-->
+    lex(prepnp(w,loc),sg,'przeddzień',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(w przypadku)-->
+    lex(prepnp(w,loc),sg,'przypadek',ratr1({np(gen);cp(gdy);cp(int[jak;kiedy]);ncp(gen,rel[co])}+{adjp(agr)}))	[pewna]
+    lex(prepnp(w,loc),sg,'przypadek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,'każdy',natr)}))	[pewna]
+comprepnp(w ramach)-->
+    lex(prepnp(w,loc),pl,'rama',ratr({np(gen);ncp(gen,rel[co;jak]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w razie)-->
+    lex(prepnp(w,loc),pl,'raz',ratr1({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('każdy','przeciwny','taki','żaden'),natr)}))	[pewna]
+comprepnp(w rezultacie)-->
+    lex(prepnp(w,loc),sg,'rezultat',ratr({np(gen);ncp(gen,int[co;jak]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w rodzaju)-->
+    lex(prepnp(w,loc),sg,'rodzaj',ratr1({np(gen);ncp(gen,int[co]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w roli)-->
+    lex(prepnp(w,loc),sg,'rola',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w sferze)-->
+    lex(prepnp(w,loc),sg,'sfera',ratr({np(gen);ncp(gen,int[co;czy;jak])}+{adjp(agr)}))	[pewna]
+comprepnp(w sprawie)-->
+    lex(prepnp(w,loc),_,'sprawa',ratr({adjp(agr)}+{cp(int);cp(że)}))	[pewna]
+    lex(prepnp(w,loc),_,'sprawa',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w stosunku do)-->
+    lex(prepnp(w,loc),sg,'stosunek',ratr1({prepnp(do,gen);prepncp(do,gen,int);prepncp(do,gen,że);prepncp(do,gen,żeby)}))	[pewna]
+comprepnp(w stronę)-->
+    lex(prepnp(w,acc),sg,'strona',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w ślad za)-->
+    lex(prepnp(w,acc),sg,'ślad',ratr1({prepnp(za,inst);prepncp(za,inst,int[co;jak;skąd]);prepncp(za,inst,że)}))	[pewna]
+comprepnp(w środku)-->
+    lex(prepnp(w,loc),sg,'środek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(w świetle)-->
+    lex(prepnp(w,loc),sg,'światło',ratr({np(gen);ncp(gen,int);ncp(gen,że)}))	[pewna]
+comprepnp(w temacie)-->
+    lex(prepnp(w,loc),sg,'temat',ratr({adjp(agr)}+{cp(że)}))	[pewna]
+    lex(prepnp(w,loc),sg,'temat',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w toku)-->
+    lex(prepnp(w,loc),sg,'tok',ratr({np(gen)}+{adjp(agr)}))	[pewna]
+comprepnp(w trakcie)-->
+    lex(prepnp(w,loc),sg,'trakt',ratr({np(gen);ncp(gen,int)}))	[pewna]
+comprepnp(w wydaniu)-->
+    lex(prepnp(w,loc),sg,'wydanie',ratr({adjp(agr)}+{possp}))	[pewna]
+comprepnp(w wyniku)-->
+    lex(prepnp(w,loc),sg,'wynik',ratr1({np(gen);ncp(gen,int[co;jak;jaki]);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(w wypadku)-->
+    lex(prepnp(w,loc),sg,'wypadek',ratr1({np(gen);cp(gdy);cp(int[jak;kiedy])}+{adjp(agr)}))	[pewna]
+comprepnp(w wysokości)-->
+    lex(prepnp(w,loc),sg,'wysokość',ratr({np(gen);ncp(gen,int[co;ile])}+{adjp(agr)}))	[pewna]
+comprepnp(w zakresie)-->
+    lex(prepnp(w,loc),sg,'zakres',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(w zależności od)-->
+    lex(prepnp(w,loc),sg,'zależność',ratr1({prepnp(od,gen);prepncp(od,gen,int)}))	[pewna]
+comprepnp(w zamian za)-->
+    lex(prepnp(w,acc),sg,'zamian',ratr1({prepnp(za,acc);prepncp(za,acc,int[co;jak]);prepncp(za,acc,że);prepncp(za,acc,żeby)}))	[pewna]
+comprepnp(w zastępstwie)-->
+    lex(prepnp(w,loc),sg,'zastępstwo',ratr1({np(gen)}))	[pewna]
+comprepnp(w związku z)-->
+    lex(prepnp(w,loc),sg,'związek',ratr1({prepnp(z,inst);prepncp(z,inst,int);prepncp(z,inst,że)}))	[pewna]
+comprepnp(zależnie od)-->
+    lex(advp(misc),pos,'zależnie',ratr1({prepnp(od,gen);prepncp(od,gen,int)}))	[pewna]
+comprepnp(za cenę)-->
+    lex(prepnp(za,acc),sg,'cena',ratr1({np(gen);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(za pomocą)-->
+    lex(prepnp(za,inst),sg,'pomoc',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(za pośrednictwem)-->
+    lex(prepnp(za,inst),sg,'pośrednictwo',ratr({np(gen);possp;ncp(gen,int[co])}+{adjp(agr)}))	[pewna]
+comprepnp(za przyczyną)-->
+    lex(prepnp(za,inst),sg,'przyczyna',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}+{possp}))	[pewna]
+comprepnp(za sprawą)-->
+    lex(prepnp(za,inst),sg,'sprawa',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(za wyjątkiem)-->
+    lex(prepnp(za,inst),sg,'wyjątek',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(ze strony)-->
+    lex(prepnp(z,gen),sg,'strona',ratr({possp;ncp(gen,rel[kto])}))	[pewna]
+comprepnp(ze względu na)-->
+    lex(prepnp(z,gen),sg,'wzgląd',ratr1({prepnp(na,acc);prepncp(na,acc,int);prepncp(na,acc,że);prepncp(na,acc,żeby)}))	[pewna]
+    lex(prepnp(z,gen),_,'wzgląd',ratr({adjp(agr)}+{cp(że)}+{lex(adjp(agr),agr,agr,pos,XOR('taki','ten','tenże'),natr)}))	[pewna]
+comprepnp(zgodnie z)-->
+    lex(advp(misc),pos,'zgodnie',ratr1({prepnp(z,inst);prepncp(z,inst,int);prepncp(z,inst,że)}))	[pewna]
+comprepnp(z dziedziny)-->
+    lex(prepnp(z,gen),_,'dziedzina',ratr({np(gen)}+{adjp(agr)}+{possp}))	[pewna]
+comprepnp(z głębi)-->
+    lex(prepnp(z,gen),_,'głąb',ratr({np(gen);ncp(gen,int[co])}+{adjp(agr)}))	[pewna]
+comprepnp(z końcem)-->
+    lex(prepnp(z,inst),sg,'koniec',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(z okazji)-->
+    lex(prepnp(z,gen),_,'okazja',ratr({adjp(agr)}+{cp(że)}))	[pewna]
+    lex(prepnp(z,gen),_,'okazja',ratr({np(gen);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(z perspektywy)-->
+    lex(prepnp(z,gen),_,'perspektywa',ratr({np(gen);ncp(gen,int)}+{adjp(agr)}+{possp}))	[pewna]
+comprepnp(z początkiem)-->
+    lex(prepnp(z,inst),sg,'początek',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(z pomocą)-->
+    lex(prepnp(z,inst),sg,'pomoc',ratr1({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(z powodu)-->
+    lex(prepnp(z,gen),_,'powód',ratr({np(gen);cp(int);cp(że);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(z przodu)-->
+    lex(prepnp(z,gen),sg,'przód',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(z przyczyny)-->
+    lex(prepnp(z,gen),_,'przyczyna',ratr({np(gen);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(z punktu widzenia)-->
+    lex(prepnp(z,gen),sg,'punkt',ratr1({adjp(agr)}+{possp}+{lex(np(gen),sg,'widzenie',ratr({np(gen);ncp(gen,int);ncp(gen,że)}))}))	[pewna]
+comprepnp(z racji)-->
+    lex(prepnp(z,gen),_,'racja',ratr({adjp(agr)}+{cp(że)}))	[pewna]
+    lex(prepnp(z,gen),sg,'racja',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{lex(adjp(agr),agr,agr,pos,'sam',natr)}))	[pewna]
+comprepnp(z ramienia)-->
+    lex(prepnp(z,gen),sg,'ramię',ratr({possp}+{lex(adjp(agr),agr,agr,pos,'jaki',natr)}))	[pewna]
+comprepnp(z tyłu)-->
+    lex(prepnp(z,gen),sg,'tył',ratr({np(gen)}+{lex(adjp(agr),agr,agr,pos,XOR('sam','samiuśki','samiuteńki','samiutki'),natr)}))	[pewna]
+comprepnp(z tytułu)-->
+    lex(prepnp(z,gen),sg,'tytuł',ratr({np(gen);ncp(gen,int);ncp(gen,że)}+{adjp(agr)}))	[pewna]
+comprepnp(z uwagi na)-->
+    lex(prepnp(z,gen),sg,'uwaga',ratr1({prepnp(na,acc);prepncp(na,acc,int);prepncp(na,acc,że);prepncp(na,acc,żeby)}))	[pewna]
+comprepnp(z wyjątkiem)-->
+    lex(prepnp(z,inst),sg,'wyjątek',ratr({np(gen);ncp(gen,int);ncp(gen,że);ncp(gen,żeby)}+{adjp(agr)}))	[pewna]
+comprepnp(z zakresu)-->
+    lex(prepnp(z,gen),sg,'zakres',ratr({np(gen);ncp(gen,int)}+{adjp(agr)}))	[pewna]
+distrp-->
+    prepnp(po,loc)	[pewna]
+    prepnump(po,acc)	[pewna]
+possp-->
+    {np(gen);lex(adjp(agr),agr,agr,pos,OR('cudzy';'czyj';'czyjkolwiek';'czyjś';'mój';'nasz';'niczyj';'pański';'swój';'twój';'wasz'),natr)} + {lex(adjp(agr),agr,agr,pos,'własny',natr)}	[pewna]
+xp(abl)-->
+    advp(abl)	[pewna]
+    cp(int[skąd])	[pewna]
+    prepadjp(z,gen)	[pewna]
+    prepnp(od,gen)	[pewna]
+    prepnp(spod,gen)	[pewna]
+    prepnp(spomiędzy,gen)	[pewna]
+    prepnp(sponad,gen)	[pewna]
+    prepnp(spopod,gen)	[pewna]
+    prepnp(spośród,gen)	[pewna]
+    prepnp(spoza,gen)	[pewna]
+    prepnp(sprzed,gen)	[pewna]
+    prepnp(z,gen)	[pewna]
+    prepnp(znad,gen)	[pewna]
+    prepnp(zza,gen)	[pewna]
+xp(adl)-->
+    advp(adl)	[pewna]
+    comprepnp(w kierunku)	[pewna]
+    comprepnp(w stronę)	[pewna]
+    prepnp(do,gen)	[pewna]
+    prepnp(ku,dat)	[pewna]
+    prepnp(między,acc)	[pewna]
+    prepnp(na,acc)	[pewna]
+    prepnp(nad,acc)	[pewna]
+    prepnp(nieopodal,gen)	[pewna]
+    prepnp(opodal,gen)	[pewna]
+    prepnp(pod,acc)	[pewna]
+    prepnp(pomiędzy,acc)	[pewna]
+    prepnp(poza,acc)	[pewna]
+    prepnp(przed,acc)	[pewna]
+    prepnp(w,acc)	[pewna]
+    prepnp(za,acc)	[pewna]
+xp(caus)-->
+    comprepnp(na myśl)	[pewna]
+    comprepnp(na skutek)	[pewna]
+    comprepnp(na widok)	[pewna]
+    comprepnp(pod wpływem)	[pewna]
+    comprepnp(w wyniku)	[pewna]
+    comprepnp(z powodu)	[pewna]
+    cp(bo)	[pewna]
+    prepncp(dzięki,dat,że)	[pewna]
+    prepncp(od,gen,że)	[pewna]
+    prepnp(dzięki,dat)	[pewna]
+    prepnp(na,acc)	[pewna]
+    prepnp(od,gen)	[pewna]
+    prepnp(przez,acc)	[pewna]
+    prepnp(wskutek,gen)	[pewna]
+    prepnp(z,gen)	[pewna]
+xp(dest)-->
+    comprepnp(na rzecz)	[pewna]
+    comprepnp(w celu)	[pewna]
+    comprepnp(w intencji)	[pewna]
+    comprepnp(w stronę)	[pewna]
+    cp(żeby)	[pewna]
+    prepncp(do,gen,żeby)	[pewna]
+    prepncp(ku,dat,żeby)	[pewna]
+    prepncp(na,acc,int)	[pewna]
+    prepncp(na,acc,że)	[pewna]
+    prepncp(na,acc,żeby)	[pewna]
+    prepncp(po,acc,żeby)	[pewna]
+    prepnp(dla,gen)	[pewna]
+    prepnp(do,gen)	[pewna]
+    prepnp(ku,dat)	[pewna]
+    prepnp(na,acc)	[pewna]
+    prepnp(po,acc)	[pewna]
+xp(dur)-->
+    advp(dur)	[pewna]
+    cp(aż)	[pewna]
+    cp(dopóki)	[pewna]
+    np(acc)	[pewna]
+    np(inst)	[pewna]
+    prepnp(do,gen)	[pewna]
+    prepnp(od,gen)	[pewna]
+    prepnp(przez,acc)	[pewna]
+xp(instr)-->
+    comprepnp(przy pomocy)	[pewna]
+    comprepnp(przy użyciu)	[pewna]
+    comprepnp(za pomocą)	[pewna]
+    np(inst)	[pewna]
+xp(locat)-->
+    advp(locat)	[pewna]
+    comprepnp(po bokach)	[pewna]
+    comprepnp(po stronie)	[pewna]
+    comprepnp(ze strony)	[pewna]
+    comprepnp(z przodu)	[pewna]
+    comprepnp(z tyłu)	[pewna]
+    cp(int[gdzie])	[pewna]
+    prepadjp(po,loc)	[pewna]
+    prepnp(dokoła,gen)	[pewna]
+    prepnp(dookoła,gen)	[pewna]
+    prepnp(koło,gen)	[pewna]
+    prepnp(między,inst)	[pewna]
+    prepnp(nad,inst)	[pewna]
+    prepnp(na,loc)	[pewna]
+    prepnp(naokoło,gen)	[pewna]
+    prepnp(naprzeciw,gen)	[pewna]
+    prepnp(nieopodal,gen)	[pewna]
+    prepnp(obok,gen)	[pewna]
+    prepnp(opodal,gen)	[pewna]
+    prepnp(pod,inst)	[pewna]
+    prepnp(po,loc)	[pewna]
+    prepnp(pomiędzy,inst)	[pewna]
+    prepnp(ponad,inst)	[pewna]
+    prepnp(poniżej,gen)	[pewna]
+    prepnp(popod,inst)	[pewna]
+    prepnp(pośrodku,gen)	[pewna]
+    prepnp(pośród,gen)	[pewna]
+    prepnp(powyżej,gen)	[pewna]
+    prepnp(poza,inst)	[pewna]
+    prepnp(przed,inst)	[pewna]
+    prepnp(przy,loc)	[pewna]
+    prepnp(u,gen)	[pewna]
+    prepnp(vis-à-vis,gen)	[pewna]
+    prepnp(wewnątrz,gen)	[pewna]
+    prepnp(wkoło,gen)	[pewna]
+    prepnp(w,loc)	[pewna]
+    prepnp(wokół,gen)	[pewna]
+    prepnp(wśród,gen)	[pewna]
+    prepnp(wzdłuż,gen)	[pewna]
+    prepnp(za,inst)	[pewna]
+    prepnp(naokół,gen)	[archaiczna]
+    prepnp(pobocz,gen)	[archaiczna]
+    prepnp(pobok,gen)	[archaiczna]
+    prepnp(podal,gen)	[archaiczna]
+    prepnp(podle,gen)	[archaiczna]
+    prepnp(śród,gen)	[archaiczna]
+    prepnp(wedle,gen)	[archaiczna]
+    prepnp(wpośród,gen)	[archaiczna]
+    prepnp(wśrzód,gen)	[archaiczna]
+xp(mod)-->
+    advp(mod)	[pewna]
+    comprepnp(na sposób)	[pewna]
+    cp(rel[jakby])	[pewna]
+    lex(prepnp(w,acc),sg,'sposób',atr({adjp(agr)}))	[pewna]
+    prepadjp(jako,str)	[pewna]
+    prepadjp(jak,str)	[pewna]
+    prepadjp(po,postp)	[pewna]
+    prepnp(bez,gen)	[pewna]
+    prepnp(jako,str)	[pewna]
+    prepnp(jak,str)	[pewna]
+    prepnp(pod,acc)	[pewna]
+    prepnp(z,inst)	[pewna]
+    comprepnp(na modłę)	[archaiczna]
+    cp(rel[jakoby])	[archaiczna]
+xp(perl)-->
+    advp(perl)	[pewna]
+    comprepnp(w poprzek)	[pewna]
+    cp(int[którędy])	[pewna]
+    np(inst)	[pewna]
+    prepnp(dokoła,gen)	[pewna]
+    prepnp(dookoła,gen)	[pewna]
+    prepnp(koło,gen)	[pewna]
+    prepnp(między,inst)	[pewna]
+    prepnp(nad,inst)	[pewna]
+    prepnp(naokoło,gen)	[pewna]
+    prepnp(obok,gen)	[pewna]
+    prepnp(pod,inst)	[pewna]
+    prepnp(po,loc)	[pewna]
+    prepnp(pomiędzy,inst)	[pewna]
+    prepnp(ponad,inst)	[pewna]
+    prepnp(poprzez,acc)	[pewna]
+    prepnp(przez,acc)	[pewna]
+    prepnp(via,nom)	[pewna]
+    prepnp(wokoło,gen)	[pewna]
+    prepnp(wokół,gen)	[pewna]
+    prepnp(wzdłuż,gen)	[pewna]
+    prepnp(naokół,gen)	[archaiczna]
+    prepnp(około,gen)	[archaiczna]
+    prepnp(skroś,gen)	[archaiczna]
+    prepnp(wskroś,gen)	[archaiczna]
+    prepnp(wskróś,gen)	[archaiczna]
+xp(temp)-->
+    advp(temp)	[pewna]
+    cp(gdy)	[pewna]
+    cp(jak)	[pewna]
+    cp(kiedy)	[pewna]
+    cp(zanim)	[pewna]
+    np(gen)	[pewna]
+    prepncp(po,loc,gdy)	[pewna]
+    prepncp(po,loc,jak)	[pewna]
+    prepncp(po,loc,kiedy)	[pewna]
+    prepncp(przed,inst,gdy)	[pewna]
+    prepncp(przed,inst,jak)	[pewna]
+    prepncp(przed,inst,kiedy)	[pewna]
+    prepnp(koło,gen)	[pewna]
+    prepnp(lada,nom)	[pewna]
+    prepnp(między,inst)	[pewna]
+    prepnp(około,gen)	[pewna]
+    prepnp(o,loc)	[pewna]
+    prepnp(podczas,gen)	[pewna]
+    prepnp(po,loc)	[pewna]
+    prepnp(pomiędzy,inst)	[pewna]
+    prepnp(przed,inst)	[pewna]
+    prepnp(w,acc)	[pewna]
+    prepnp(w,loc)	[pewna]
+
+% Attributes subtypes:
+int-->
+    co	[pewna]
+    czemu	[pewna]
+    czy	[pewna]
+    czyj	[pewna]
+    dlaczego	[pewna]
+    dokąd	[pewna]
+    gdzie	[pewna]
+    ile	[pewna]
+    jak	[pewna]
+    jaki	[pewna]
+    kiedy	[pewna]
+    kto	[pewna]
+    którędy	[pewna]
+    który	[pewna]
+    odkąd	[pewna]
+    skąd	[pewna]
+    jakoby	[archaiczna]
+rel-->
+    co	[pewna]
+    dokąd	[pewna]
+    gdzie	[pewna]
+    jak	[pewna]
+    jakby	[pewna]
+    jaki	[pewna]
+    jakoby	[pewna]
+    kiedy	[pewna]
+    kto	[pewna]
+    którędy	[pewna]
+    który	[pewna]
+    odkąd	[pewna]
+    skąd	[pewna]
+
+% Attributes equivalents:
+jak-->
+    niczym
+przeciw-->
+    przeciwko

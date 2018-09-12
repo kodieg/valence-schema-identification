@@ -1,0 +1,252 @@
+<!DOCTYPE chunkList SYSTEM "ccl.dtd">
+<chunkList>
+    <chunk id="ch1" type="p">
+        <sentence id="s1">
+            <tok>
+                <orth>Dzięki</orth>
+                <lex disamb="1"><base>dzięki</base><ctag>prep:dat</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">1</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>inżynierii</orth>
+                <lex disamb="1"><base>inżynieria</base><ctag>subst:sg:gen:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">1</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>genetycznej</orth>
+                <lex disamb="1"><base>genetyczny</base><ctag>adj:sg:gen:f:pos</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">1</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>opracowano</orth>
+                <lex disamb="1"><base>opracować</base><ctag>imps:perf</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp" head="1">1</ann>
+            </tok>
+            <tok>
+                <orth>szczepionkę</orth>
+                <lex disamb="1"><base>szczepionka</base><ctag>subst:sg:acc:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">2</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>na</orth>
+                <lex disamb="1"><base>na</base><ctag>prep:acc</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>alergię</orth>
+                <lex disamb="1"><base>alergia</base><ctag>subst:sg:acc:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>pyłkową &gt; x</orth>
+                <lex disamb="1"><base>pyłkową &gt; x</base><ctag>adj:sg:acc:f:pos</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <ns/>
+            <tok>
+                <orth>.</orth>
+                <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>&apos;&apos;</orth>
+                <lex disamb="1"><base>&apos;&apos;</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+        </sentence>
+        <sentence id="s2">
+            <tok>
+                <orth>Badania</orth>
+                <lex disamb="1"><base>badanie</base><ctag>subst:pl:nom:n</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">1</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>prowadzone</orth>
+                <lex disamb="1"><base>prowadzić</base><ctag>ppas:pl:nom:f:imperf:aff</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>w</orth>
+                <lex disamb="1"><base>w</base><ctag>prep:loc:nwok</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">2</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>Austrii</orth>
+                <lex disamb="1"><base>Austria</base><ctag>subst:sg:gen:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">2</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <ns/>
+            <tok>
+                <orth>,</orth>
+                <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>Szwecji</orth>
+                <lex disamb="1"><base>Szwecja</base><ctag>subst:sg:gen:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>i</orth>
+                <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>Francji</orth>
+                <lex disamb="1"><base>Francja</base><ctag>subst:sg:loc:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">3</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>-</orth>
+                <lex disamb="1"><base>-</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>donosi</orth>
+                <lex disamb="1"><base>donosić</base><ctag>fin:sg:ter:imperf</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp" head="1">1</ann>
+            </tok>
+            <tok>
+                <orth>&quot;</orth>
+                <lex disamb="1"><base>&quot;</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <ns/>
+            <tok>
+                <orth>Proceedings</orth>
+                <lex disamb="1"><base>Proceedings</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>of</orth>
+                <lex disamb="1"><base>of</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>the</orth>
+                <lex disamb="1"><base>the</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>National</orth>
+                <lex disamb="1"><base>National</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>Academy</orth>
+                <lex disamb="1"><base>Academy</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>of</orth>
+                <lex disamb="1"><base>of</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>Sciences</orth>
+                <lex disamb="1"><base>Sciences</base><ctag>ign</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <ns/>
+            <tok>
+                <orth>&quot;</orth>
+                <lex disamb="1"><base>&quot;</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">4</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>-</orth>
+                <lex disamb="1"><base>-</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>potwierdzają</orth>
+                <lex disamb="1"><base>potwierdzać</base><ctag>fin:pl:ter:imperf</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp" head="1">2</ann>
+            </tok>
+            <tok>
+                <orth>jej</orth>
+                <lex disamb="1"><base>on</base><ctag>ppron3:sg:gen:f:ter:akc:npraep</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">5</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <tok>
+                <orth>skuteczność</orth>
+                <lex disamb="1"><base>skuteczność</base><ctag>subst:sg:acc:f</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np" head="1">5</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+            <ns/>
+            <tok>
+                <orth>.</orth>
+                <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+                <ann chan="chunk_adjp">0</ann>
+                <ann chan="chunk_np">0</ann>
+                <ann chan="chunk_vp">0</ann>
+            </tok>
+        </sentence>
+    </chunk>
+</chunkList>
