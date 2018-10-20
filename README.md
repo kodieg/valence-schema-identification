@@ -3,6 +3,7 @@
 Model for argument identification is located in `data/models/model.crf`, so argument identification task can be performed without additional training. In order to identify arguments use `identify_arguments.sh` script. To train new model use `train_crf_model.sh` script. Before using valency identification scripts one need to train valency schema models using `train_valence_selection_models.sh` 
 
 Before using this tool download Słowosieć from http://nlp.pwr.wroc.pl/plwordnet/download/ and save it to `flared/src/main/resources/plwordnet_2_0.xml`.
+Then run install.sh script
 
 == `identify_arguments.sh` script ==
 

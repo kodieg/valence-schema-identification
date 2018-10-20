@@ -11,5 +11,8 @@ cd data/schemas-raw-corpuses/eval-corpus
 gunzip eval-corpus.txt.disamb.chunked.gz
 cd -
 
+
+wget 'http://mozart.ipipan.waw.pl/~kodie/models-nkjp-300m.tgz'
+tar xzvf models-nkjp-300m.tgz
 # TODO: download models and unzip them
 # compile sr and copy jar to flared/lib
