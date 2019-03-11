@@ -16,3 +16,7 @@ wget 'http://mozart.ipipan.waw.pl/~kodie/models-nkjp-300m.tgz'
 tar xzvf models-nkjp-300m.tgz
 # TODO: download models and unzip them
 # compile sr and copy jar to flared/lib
+
+cd flared/data
+wget 'http://mozart.ipipan.waw.pl/~kodie/300m.bin'
+
